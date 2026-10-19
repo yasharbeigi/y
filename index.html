@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>بحث علمی عربی دهم | درس ۱</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.15), transparent 30%),
+                radial-gradient(circle at 85% 80%, rgba(139, 92, 246, 0.15), transparent 30%),
+                #0b1020;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            background: rgba(20, 27, 48, 0.88);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 28px;
+            padding: 55px 35px;
+            text-align: center;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(15px);
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: #3b82f6;
+            opacity: 0.12;
+            border-radius: 50%;
+            top: -130px;
+            right: -100px;
+        }
+
+        .card::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            background: #8b5cf6;
+            opacity: 0.1;
+            border-radius: 50%;
+            bottom: -120px;
+            left: -80px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .icon {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 25px;
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.3);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 7px 15px;
+            border-radius: 30px;
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(96, 165, 250, 0.25);
+            color: #93c5fd;
+            font-size: 13px;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .subtitle {
+            color: #aeb8cc;
+            font-size: 17px;
+            line-height: 1.9;
+            margin-bottom: 35px;
+        }
+
+        .file-box {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            text-align: right;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 25px;
+        }
+
+        .pdf-icon {
+            width: 55px;
+            height: 55px;
+            flex-shrink: 0;
+            border-radius: 14px;
+            background: #dc2626;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .file-info {
+            flex: 1;
+        }
+
+        .file-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .file-type {
+            color: #8f9bb3;
+            font-size: 13px;
+        }
+
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 17px 20px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.25s;
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 35px rgba(37, 99, 235, 0.35);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            margin-top: 28px;
+            color: #69758d;
+            font-size: 13px;
+        }
+
+        .footer strong {
+            color: #aeb8cc;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .card {
+                padding: 40px 20px;
+                border-radius: 23px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+
+            .file-box {
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="card">
+
+            <div class="content">
+
+                <div class="icon">
+                    📚
+                </div>
+
+                <div class="badge">
+                    عربی دهم · درس اول
+                </div>
+
+                <h1>
+                    بحث علمی عربی دهم
+                </h1>
+
+                <p class="subtitle">
+                    <br>
+                </p>
+
+                <div class="file-box">
+
+                    <div class="pdf-icon">
+                        PDF
+                    </div>
+
+                    <div class="file-info">
+                        <div class="file-name">
+                            بحث علمی عربی دهم — درس ۱ — یاشار بیگی
+                        </div>
+
+                        <div class="file-type">
+                            فایل PDF آموزشی
+                        </div>
+                    </div>
+
+                </div>
+
+                <a
+                    class="download-btn"
+                    href="۱.pdf"
+                    download="بحث علمی عربی دهم - درس ۱ - یاشار بیگی.pdf"
+                >
+                    ⬇️ دانلود فایل PDF
+                </a>
+
+                <div class="footer">
+                    تهیه و تنظیم توسط <strong>یاشار بیگی</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
